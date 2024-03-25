@@ -33,4 +33,13 @@ function isLeapYear(year){
 
 console.log(isLeapYear(2024));
 
-
+function celsiusToFahrenheit(degree){
+    return ((9/5*degree)+32);
+}
+function fahrenheitToCelsius(degree){
+    return ((degree-32)*5/9);
+}
+console.log(celsiusToFahrenheit(20));
+console.log(fahrenheitToCelsius(68));
+console.log(celsiusToFahrenheit(60));
+console.log(fahrenheitToCelsius(45));
