@@ -20,7 +20,17 @@ console.log(adate.getDate());
 
 console.log(adate.toISOString());
 
+console.log(date.toISOString().substring(0,10));
+
 //document.getElementById("main").innerHTML = "Lexicon JavaScript Exercises.";
 
 //document.getElementById("date").innerHTML = date.toLocaleDateString("sv-SE");
+
+
+function isLeapYear(year){
+    return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+}
+
+console.log(isLeapYear(2024));
+
 
