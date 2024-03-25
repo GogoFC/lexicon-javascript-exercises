@@ -43,3 +43,7 @@ console.log(celsiusToFahrenheit(20));
 console.log(fahrenheitToCelsius(68));
 console.log(celsiusToFahrenheit(60));
 console.log(fahrenheitToCelsius(45));
+
+let text = "Some text";
+console.log(text.slice(0,3));
+
