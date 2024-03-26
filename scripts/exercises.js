@@ -2,7 +2,8 @@
 const date = new Date();
 const adate = new Date();
 
-document.getElementsByTagName("p")[0].innerHTML = date.toLocaleDateString("sv-SE");
+document.getElementsByTagName("p")[0].innerHTML =
+  date.toLocaleDateString("sv-SE");
 document.getElementsByTagName("p")[1].innerHTML = date.toLocaleDateString();
 document.getElementsByTagName("p")[2].innerHTML = date.toTimeString();
 document.getElementsByTagName("p")[3].innerHTML = date.toISOString();
@@ -26,7 +27,6 @@ console.log(adate.toISOString());
 console.log(date.toISOString().substring(0, 10));
 
 document.getElementById("main").innerHTML = "Lexicon JavaScript exercises.";
-
 
 //Leap year
 function isLeapYear(year) {
@@ -107,5 +107,3 @@ for (let number of numbers) {
   sum4 = sum4 + number;
 }
 console.log(sum4);
-
-
