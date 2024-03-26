@@ -1,3 +1,3 @@
 # JavaScript exercises
 
-[Github Pages Link](https://gogofc.github.io/lexicon-javascript-exercises/)
+[Github Pages lexicon-javascript-exercises](https://gogofc.github.io/lexicon-javascript-exercises/)
