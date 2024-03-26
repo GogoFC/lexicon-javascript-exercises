@@ -91,20 +91,21 @@ for (let i = numbers.length; i >= 0; i--) {
   sum2 += i;
   //console.log(i);
 }
-console.log(sum2);
+console.log("");
+console.log("Sum: Loop: " + sum2);
 
 let sum5 = 0;
 numbers.forEach((numbers) => {
   sum5 += numbers;
 });
-console.log(sum5);
+console.log("Sum: forEach: " + sum5);
 
 // For of loop
 let sum3 = 0;
 for (let i of numbers) {
   sum3 += i;
 }
-console.log(sum3);
+console.log("Sum: Loop: " + sum3);
 
 
 
@@ -112,8 +113,8 @@ let sum4 = 0;
 for (let number of numbers) {
   sum4 = sum4 + number;
 }
-console.log(sum4);
-
+console.log("Sum: Loop: " + sum4);
+console.log("")
 // Largest number in array
 
 const arr = [1, 2, 3];
@@ -123,10 +124,10 @@ const arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const largest = Math.max(...arrayOfNumbers);
 const largest2 = Math.max.apply(null, arrayOfNumbers);
 
-console.log(max);
-console.log(largest);
+//console.log(max);
+console.log("Math.max(...array) : " + largest);
 //console.log(arrayOfNumbers); 
-
+console.log("")
 
 // Function to add numbers in an Array
 function sumOfArray(array){
@@ -136,7 +137,7 @@ function sumOfArray(array){
   }
   return sum;
 }
-console.log("Sum function result = " + sumOfArray(numbers));
+console.log("Function: sumOfArray :  = " + sumOfArray(numbers));
 
 // Function to find the largest number of an Array
 function maxInArray(array){
