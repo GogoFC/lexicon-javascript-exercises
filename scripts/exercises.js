@@ -1,9 +1,9 @@
-// Date
+
+//Comment  ate
 const date = new Date();
 const adate = new Date();
 
-document.getElementsByTagName("p")[0].innerHTML =
-  date.toLocaleDateString("sv-SE");
+document.getElementsByTagName("p")[0].innerHTML = date.toLocaleDateString("sv-SE");
 document.getElementsByTagName("p")[1].innerHTML = date.toLocaleDateString();
 document.getElementsByTagName("p")[2].innerHTML = date.toTimeString();
 document.getElementsByTagName("p")[3].innerHTML = date.toISOString();
@@ -107,3 +107,16 @@ for (let number of numbers) {
   sum4 = sum4 + number;
 }
 console.log(sum4);
+
+// Largest number in array
+
+const arr = [1, 2, 3];
+const max = Math.max(...arr);
+
+const arrayOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+const largest = Math.max(...arrayOfNumbers);
+const largest2 = Math.max.apply(null, arrayOfNumbers);
+
+console.log(max);
+console.log(largest);
+//console.log(arrayOfNumbers); 

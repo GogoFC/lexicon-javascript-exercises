@@ -1,4 +1,4 @@
-let x = 5;
-let y = 10;
-let z = x + y;
+let xx = 5;
+let yy = 10;
+let zz = xx + yy;
 //alert(z);
