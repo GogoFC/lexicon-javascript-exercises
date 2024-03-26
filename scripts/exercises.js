@@ -30,7 +30,6 @@ function isLeapYear(year) {
 
 console.log(isLeapYear(2024));
 
-
 // Celsius to Fahrenheit conversion
 function celsiusToFahrenheit(degree) {
   return (9 / 5) * degree + 32;
@@ -44,7 +43,6 @@ console.log(celsiusToFahrenheit(20));
 console.log(fahrenheitToCelsius(68));
 console.log(celsiusToFahrenheit(60));
 console.log(fahrenheitToCelsius(45));
-
 
 // Remove text from a string
 let text = "Some text";
@@ -70,10 +68,6 @@ for (let i of text) {
 }
 console.log("text.length = " + text.length);
 
-
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-
-
 /*
 for(let number of numbers){
     //sum = numbers[number] + numbers.indexOf(number);
@@ -87,13 +81,25 @@ for (let i = 0; i < 10; i--) {
   }
 */
 
+// Add number in Array
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+let sum2 = 0;
 for (let i = numbers.length; i >= 0; i--) {
-  //console.log(numbers[i]);
- let iteration = numbers[i];
- let iterationAhead = numbers[1+i];
-
- console.log(iteration);
- console.log(iterationAhead);
+  sum2 += i;
+  //console.log(i);
 }
+console.log(sum2);
 
+let sum = 0;
+numbers.forEach((numbers) => {
+  sum += numbers;
+});
+console.log(sum);
 
+let sum3 = 0;
+// For of loop
+for (let i of numbers) {
+  sum3 += i;
+}
+console.log(sum3);
