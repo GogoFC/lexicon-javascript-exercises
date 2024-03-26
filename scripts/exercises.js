@@ -68,6 +68,32 @@ for (let i = text.length; i >= 0; i--) {
 for (let i of text) {
   console.log(text[i]);
 }
+console.log("text.length = " + text.length);
 
 
-//console.log(text.length);
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+
+/*
+for(let number of numbers){
+    //sum = numbers[number] + numbers.indexOf(number);
+   // console.log(sum);
+    console.log(numbers[number]);
+}
+*/
+/* infinite loop
+for (let i = 0; i < 10; i--) {
+    console.log(numbers[i]);
+  }
+*/
+
+for (let i = numbers.length; i >= 0; i--) {
+  //console.log(numbers[i]);
+ let iteration = numbers[i];
+ let iterationAhead = numbers[1+i];
+
+ console.log(iteration);
+ console.log(iterationAhead);
+}
+
+
