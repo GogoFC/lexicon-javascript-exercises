@@ -25,7 +25,7 @@ console.log(adate.toISOString());
 
 console.log(date.toISOString().substring(0, 10));
 
-document.getElementById("main").innerHTML = "Lexicon JavaScript Exercises.";
+document.getElementById("main").innerHTML = "Lexicon JavaScript exercises.";
 
 
 //Leap year
