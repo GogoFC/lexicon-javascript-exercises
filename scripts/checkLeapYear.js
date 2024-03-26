@@ -1,4 +1,4 @@
-function leapYearCheck2() {
+function leapYearCheck() {
   let year = document.getElementById("yearInput").value;
   let text;
 

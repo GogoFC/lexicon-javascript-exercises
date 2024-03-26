@@ -6,7 +6,7 @@
     <title>JavaScript Exercises</title>
   </head>
   <body>
-    <script src="https://gogofc.github.io/lexicon-javascript-exercises/checkLeapYear.js"></script>
+    <script src="https://gogofc.github.io/lexicon-javascript-exercises/scripts/checkLeapYear.js"></script>
     <h1 id="main">JavaScript</h1>
 
     <p tag="exercise"></p>
@@ -31,36 +31,13 @@
     <h2 id="leapYear">Check if a Year is a Leap Year?</h2>
     <p id="isLeapYear">Enter a Year to check.</p>
     <input id="yearInput" />
-    <button type="button" onclick="leapYearCheck2()">Submit</button>
+    <button type="button" onclick="leapYearCheck()">Submit</button>
     <p id="leapYearResult"></p>
 
-    <script>
-      function leapYearCheck() {
-        let year = document.getElementById("yearInput").value;
-        let text;
 
-        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-          text = "It's a Leap Year";
-        } else {
-          text = "Not a Leap Year";
-        }
-        document.getElementById("leapYearResult").innerHTML = text;
-      }
-    </script>
-
-<!--
-    <script>
-      document.getElementById("main").innerHTML = "Lexicon JavaScript exercises.";
-      const date = new Date();
-      document.getElementsByTagName("p")[0].innerHTML = date.toLocaleDateString("sv-SE");
-      document.getElementsByTagName("p")[1].innerHTML = date.toLocaleDateString();
-      document.getElementsByTagName("p")[2].innerHTML = date.toTimeString();
-      document.getElementsByTagName("p")[3].innerHTML = date.toISOString();
-    </script>
--->
     <script src="/scripts/exercises.js"></script>
     <script src="https://gogofc.github.io/lexicon-javascript-exercises/scripts/exercises.js"></script>
-    <script src="https://gogofc.github.io/lexicon-javascript-exercises/exercises2.js"></script>
+    <script src="https://gogofc.github.io/lexicon-javascript-exercises/scripts/exercises2.js"></script>
     <script src="/scripts/exercises2.js"></script>
   </body>
 </html>
