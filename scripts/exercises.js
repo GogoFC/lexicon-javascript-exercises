@@ -107,3 +107,5 @@ for (let number of numbers) {
   sum4 = sum4 + number;
 }
 console.log(sum4);
+
+
