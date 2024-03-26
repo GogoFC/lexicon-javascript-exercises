@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lexicon JavaScript Exercises</title>
-</head>
-<body>
-    <script src="/scripts/checkLeapYear.js"></script>
+  </head>
+  <body>
     <h1 id="main">JavaScript</h1>
-    <script src="https://github.com/GogoFC/lexicon-javascript-exercises/tree/main/scripts/checkLeapYear.js"></script>
-    
+
     <p tag="exercise"></p>
     <p tag="exercise"></p>
     <p tag="exercise"></p>
@@ -31,14 +29,33 @@
 
     <h2 id="leapYear">Is Leap Year?</h2>
     <p id="isLeapYear">Enter a Year to check if it is a Leap Year</p>
-    <input id="yearInput">
+    <input id="yearInput" />
     <button type="button" onclick="leapYearCheck()">Submit</button>
     <p id="leapYearResult"></p>
 
+    <script>
+      function leapYearCheck() {
+        let year = document.getElementById("yearInput").value;
+        let text;
+
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+          text = "It's a Leap Year";
+        } else {
+          text = "Not a Leap Year";
+        }
+        document.getElementById("leapYearResult").innerHTML = text;
+      }
+    </script>
+
+    <script>
+      document.getElementById("main").innerHTML = "Lexicon JavaScript Exercises.";
+      document.getElementsByTagName("p")[0].innerHTML = date.toLocaleDateString("sv-SE");
+      document.getElementsByTagName("p")[1].innerHTML = date.toLocaleDateString();
+      document.getElementsByTagName("p")[2].innerHTML = date.toTimeString();
+      document.getElementsByTagName("p")[3].innerHTML = date.toISOString();
+    </script>
 
     <script src="/scripts/exercises.js"></script>
     <script src="/scripts/exercises2.js"></script>
-    <script src="https://github.com/GogoFC/lexicon-javascript-exercises/tree/main/scripts/exercises.js"></script>
-    <script src="https://github.com/GogoFC/lexicon-javascript-exercises/tree/main/scripts/exercises2.js"></script>
-</body>
+  </body>
 </html>
