@@ -2,7 +2,8 @@
 const date = new Date();
 const adate = new Date();
 
-document.getElementsByTagName("p")[0].innerHTML = date.toLocaleDateString("sv-SE");
+document.getElementsByTagName("p")[0].innerHTML =
+  date.toLocaleDateString("sv-SE");
 document.getElementsByTagName("p")[1].innerHTML = date.toLocaleDateString();
 document.getElementsByTagName("p")[2].innerHTML = date.toTimeString();
 document.getElementsByTagName("p")[3].innerHTML = date.toISOString();
@@ -73,20 +74,13 @@ for (let i of text) {
 }
 console.log("text.length = " + text.length);
 
-/*
-for(let number of numbers){
-    //sum = numbers[number] + numbers.indexOf(number);
-   // console.log(sum);
-    console.log(numbers[number]);
-}
-*/
-/* infinite loop
-for (let i = 0; i < 10; i--) {
-    console.log(numbers[i]);
+/* //loop
+for (let i = 0; i < 10; i++) {
+  console.log("testing");
   }
 */
 
-// Add number in Array
+// Add numbers in Array
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 let sum2 = 0;
@@ -102,9 +96,15 @@ numbers.forEach((numbers) => {
 });
 console.log(sum);
 
-let sum3 = 0;
 // For of loop
+let sum3 = 0;
 for (let i of numbers) {
   sum3 += i;
 }
 console.log(sum3);
+
+let sum4 = 0;
+for (let number of numbers) {
+  sum4 = sum4 + number;
+}
+console.log(sum4);
