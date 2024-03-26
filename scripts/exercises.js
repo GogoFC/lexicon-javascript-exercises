@@ -2,6 +2,11 @@
 const date = new Date();
 const adate = new Date();
 
+document.getElementsByTagName("p")[0].innerHTML = date.toLocaleDateString("sv-SE");
+document.getElementsByTagName("p")[1].innerHTML = date.toLocaleDateString();
+document.getElementsByTagName("p")[2].innerHTML = date.toTimeString();
+document.getElementsByTagName("p")[3].innerHTML = date.toISOString();
+
 console.log(date);
 console.log(date.toLocaleDateString("sv-SE"));
 console.log(date.toLocaleDateString("en-US"));
@@ -20,7 +25,7 @@ console.log(adate.toISOString());
 
 console.log(date.toISOString().substring(0, 10));
 
-//document.getElementById("main").innerHTML = "Lexicon JavaScript Exercises.";
+document.getElementById("main").innerHTML = "Lexicon JavaScript Exercises.";
 //document.getElementById("date").innerHTML = date.toLocaleDateString("sv-SE");
 
 //Leap year
