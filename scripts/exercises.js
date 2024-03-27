@@ -255,6 +255,9 @@ console.log("");
 console.log("Form: Output of form.elements['name'].value          ↓ ↓ ↓ ↓ ↓");
 console.log(selectedValue);
 
+document.getElementsByTagName("exercise")[0].innerHTML = selectedValue;
+
+
 /// https://stackoverflow.com/a/65231208
 /*
 const ccForm = document.forms["form1"];
