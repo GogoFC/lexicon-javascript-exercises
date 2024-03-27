@@ -137,11 +137,111 @@ function sumOfArray(array){
   }
   return sum;
 }
-console.log("Function: sumOfArray :  = " + sumOfArray(numbers));
+console.log("Function: sumOfArray : " + sumOfArray(numbers));
 
 // Function to find the largest number of an Array
 function maxInArray(array){
   const max = Math.max(...array);
   return max;
 }
-console.log("Largest number function result = " + maxInArray(numbers));
+console.log("Function: maxInArray : " + maxInArray(numbers));
+
+// Function get Even numbers
+
+function getEvenNumbers(array){
+    let evenNumbers = array.filter((number) => number% 2 == 0);
+    return evenNumbers;
+}
+console.log("Function: getEvenNumbers : " + getEvenNumbers(numbers));
+
+// numbers.forEach((number) => console.log(number));
+
+function getOddNumbers(array){
+  let oddNumbers = array.filter((number) => number% 2 !== 0);
+  return oddNumbers;
+}
+console.log("Function: getOddNumbers : " + getOddNumbers(numbers));
+
+
+function squareRootOfArray(array){
+  const squared = array.map((num) => Math.sqrt(num));
+  return squared;
+}
+
+console.log("")
+console.log("Function: squareRootOfArray : " + squareRootOfArray(numbers));
+const squared = squareRootOfArray(numbers);
+console.log("")
+console.log("Console.log(squared): ↓ ↓ ↓")
+console.log(squared);
+
+// Object
+
+let person = {
+  name: "me",
+  age: "33",
+  address: {
+    city: "Bowling Green",
+    state: "Kentucky",
+    zip: "42101",
+    county: "Warren"
+  }
+};
+console.log("")
+console.log("Console.log(person.address): ↓ ↓ ↓")
+console.log(person.address);
+
+let job = {
+  jobTitle: 'JavaScript Developer',
+  location: 'USA'
+};
+// Merge object with spread operator (...)
+// If objects have a property with the same name, then the right-most object property overwrites the previous one.
+let employee = {
+  ...person,
+  ...job
+};
+console.log("")
+console.log("Merged Object: spread operator (...)          ↓ ↓ ↓ ↓ ↓")
+console.log(employee);
+
+// Merge object with Object.assign(target, sourceObj1, sourceObj2, ...)
+
+let target = Object.assign(person, job);
+console.log("")
+console.log("Merged Object: Object.assign(sourceObj1, sourceObj2, ...)          ↓ ↓ ↓ ↓ ↓")
+console.log(target);
+
+// Form
+// Notes:
+// https://stackoverflow.com/questions/3547035/getting-html-form-values
+// https://stackoverflow.com/questions/15148659/how-can-i-use-queryselector-on-to-pick-an-input-element-by-name
+// https://jsfiddle.net/2ZL4G/1/
+// 
+getFormData = (selector) => Object.fromEntries(new FormData(document.querySelector(selector)))
+console.log("")
+console.log("Form: Output of getFormData:          ↓ ↓ ↓ ↓ ↓")
+console.log(getFormData('#form1'));
+
+
+//const firstName = document.getElementById('form1').elements['name'].value;
+// form.querySelector('input[name="fname"]');
+const form = document.querySelector("#form1");
+const fName = form.elements['fname'].value;
+const lName = form.elements['lname'].value;
+console.log("")
+console.log("Form: Output of querySelector(\"#form1\")          ↓ ↓ ↓ ↓ ↓")
+console.log(form);
+console.log("")
+console.log("Form: Output of form.elements['name'].value          ↓ ↓ ↓ ↓ ↓")
+console.log(fName);
+console.log(lName);
+
+
+var form2 = document.forms[0];
+var selectElement = form2.querySelector('input[name="fname"]');
+var selectedValue = selectElement.value;
+console.log("Form: Output of form.elements['name'].value          ↓ ↓ ↓ ↓ ↓")
+console.log(selectedValue);
+
+
