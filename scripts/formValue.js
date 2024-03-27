@@ -7,6 +7,6 @@
     var lName = form.querySelector('input[name="lname"]');
     var lastName = lName.value;
     console.log(firstName);
-    document.getElementsByTagName("exercise")[0].innerHTML = firstName;
-    document.getElementsByTagName("exercise")[1].innerHTML = lastName;
+    document.getElementsById("z1").innerHTML = "firstName";
+    document.getElementsById("z2").innerHTML = lastName;
   }

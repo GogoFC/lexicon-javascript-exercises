@@ -7,6 +7,8 @@ document.getElementsByTagName("p")[1].innerHTML = date.toLocaleDateString();
 document.getElementsByTagName("p")[2].innerHTML = date.toTimeString();
 document.getElementsByTagName("p")[3].innerHTML = date.toISOString();
 
+
+
 console.log("Date: " + date);
 console.log('Date: ["sv-SE"] : ' + date.toLocaleDateString("sv-SE"));
 console.log('Date: ["en-US"] : ' + date.toLocaleDateString("en-US"));
@@ -255,7 +257,7 @@ console.log("");
 console.log("Form: Output of form.elements['name'].value          ↓ ↓ ↓ ↓ ↓");
 console.log(selectedValue);
 
-document.getElementsByTagName("exercise")[0].innerHTML = selectedValue;
+
 
 
 /// https://stackoverflow.com/a/65231208
@@ -271,3 +273,4 @@ ccForm.onsubmit = function(e) {
 }
 */
 
+document.getElementById("z1").innerHTML = "whatere";
