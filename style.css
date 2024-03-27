@@ -1,12 +1,11 @@
-
 body {
   background-color: rgb(23, 20, 33);
   color: rgb(208, 207, 204);
   font-family: "Lucida Console", "Courier New", monospace;
- 
+
 }
 
- 
+
 #myDIV {
   width: 400px;
   height: 225px;
@@ -14,11 +13,25 @@ body {
   color: white;
 }
 
-#z1 {
-  width: 120px;
-  height: 45px;
+#leapYearResult {
+  width: 180px;
+  height: 40px;
+
 }
+
+
+#z1 {
+  width: 115px;
+  height: 25px;
+  text-indent: 5%;
+  padding: 7px;
+}
+
 #z2 {
-  width: 120px;
-  height: 45px;
+  width: 115px;
+  height: 25px;
+  text-anchor: middle;
+  text-indent: 5%;
+  padding: 7px;
+
 }

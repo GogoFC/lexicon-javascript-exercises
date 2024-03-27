@@ -267,3 +267,23 @@ ccForm.onsubmit = function(e) {
   e.preventDefault();
 }
 */
+
+
+//TODO
+/*
+<button id="demo">Click me1</button>
+
+<script>
+document.getElementById("demo").addEventListener("click", myFunction);
+</script>
+
+
+/////////////
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").style.display = "none";
+</script>
+
+*/
