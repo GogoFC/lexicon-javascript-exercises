@@ -1,0 +1,24 @@
+
+body {
+  background-color: rgb(23, 20, 33);
+  color: rgb(208, 207, 204);
+  font-family: "Lucida Console", "Courier New", monospace;
+ 
+}
+
+ 
+#myDIV {
+  width: 400px;
+  height: 225px;
+  background-color: rgb(16, 4, 31);
+  color: white;
+}
+
+#z1 {
+  width: 120px;
+  height: 45px;
+}
+#z2 {
+  width: 120px;
+  height: 45px;
+}
