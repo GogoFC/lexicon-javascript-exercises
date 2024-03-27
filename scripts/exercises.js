@@ -84,6 +84,7 @@ for (let i = 0; i < 10; i++) {
 */
 
 // Add numbers in Array
+// https://www.freecodecamp.org/news/how-to-add-numbers-in-javascript-arrays/
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 let sum2 = 0;
@@ -217,6 +218,9 @@ console.log(target);
 // https://stackoverflow.com/questions/3547035/getting-html-form-values
 // https://stackoverflow.com/questions/15148659/how-can-i-use-queryselector-on-to-pick-an-input-element-by-name
 // https://jsfiddle.net/2ZL4G/1/
+// https://javascript.plainenglish.io/javascript-find-even-numbers-in-array-90943d5480ec
+//
+// READ // https://javascript.plainenglish.io/how-to-get-html-form-values-with-javascript-b4869bc5e889
 // 
 getFormData = (selector) => Object.fromEntries(new FormData(document.querySelector(selector)))
 console.log("")
@@ -237,11 +241,27 @@ console.log("Form: Output of form.elements['name'].value          ↓ ↓ ↓ �
 console.log(fName);
 console.log(lName);
 
-
 var form2 = document.forms[0];
 var selectElement = form2.querySelector('input[name="fname"]');
 var selectedValue = selectElement.value;
+//alert(selectedValue);
+console.log("")
 console.log("Form: Output of form.elements['name'].value          ↓ ↓ ↓ ↓ ↓")
 console.log(selectedValue);
+
+/// https://stackoverflow.com/a/65231208
+/*
+const ccForm = document.forms["form1"];
+
+ccForm.onsubmit = function(e) {
+
+  let ccSelection = ccForm.ccselect.value;
+  console.log(ccSelection);
+
+  e.preventDefault();
+}
+*/
+
+
 
 
