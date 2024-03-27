@@ -1,14 +1,15 @@
 // Dates
 const date = new Date();
 
-document.getElementsByTagName("p")[0].innerHTML = date.toLocaleDateString("sv-SE");
+document.getElementsByTagName("p")[0].innerHTML =
+  date.toLocaleDateString("sv-SE");
 document.getElementsByTagName("p")[1].innerHTML = date.toLocaleDateString();
 document.getElementsByTagName("p")[2].innerHTML = date.toTimeString();
 document.getElementsByTagName("p")[3].innerHTML = date.toISOString();
 
 console.log("Date: " + date);
-console.log("Date: [\"sv-SE\"] : " + date.toLocaleDateString("sv-SE"));
-console.log("Date: [\"en-US\"] : " + date.toLocaleDateString("en-US"));
+console.log('Date: ["sv-SE"] : ' + date.toLocaleDateString("sv-SE"));
+console.log('Date: ["en-US"] : ' + date.toLocaleDateString("en-US"));
 console.log("Date: [toLocaleDateString] : " + date.toLocaleDateString());
 console.log("Date: [toTimeString] : " + date.toTimeString());
 console.log("Date: [getFullYear()] : " + date.getFullYear());
@@ -16,10 +17,16 @@ console.log("Date: [getMonth()] : " + date.getMonth());
 console.log("Date: [getMonth()] + 1 : " + (date.getMonth() + 1));
 console.log("Date: [getDate()] : " + date.getDate());
 console.log("Date: [toIOSString()] : " + date.toISOString());
-console.log("Date: [toISOString().substring(0, 10)] : " + date.toISOString().substring(0, 10));
+console.log(
+  "Date: [toISOString().substring(0, 10)] : " +
+    date.toISOString().substring(0, 10)
+);
 
 let date2 = `${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`;
-console.log("Date: [`${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`] : " + date2);
+console.log(
+  "Date: [`${date.getMonth() + 1}-${date.getDate()}-${date.getFullYear()}`] : " +
+    date2
+);
 
 document.getElementById("main").innerHTML = "Lexicon JavaScript exercises.";
 
@@ -48,13 +55,13 @@ console.log("Function: fahrenheitToCelsius(45) : " + fahrenheitToCelsius(45));
 
 // Remove text from a string
 let text = "Some text";
-console.log("Slice: text=\"Some text\" text.slice(0, 3) : " + text.slice(0, 3));
+console.log('Slice: text="Some text" text.slice(0, 3) : ' + text.slice(0, 3));
 
 console.log("");
 
 // For of loop
 for (let i of text) {
-console.log("Loop: for of : " + i);
+  console.log("Loop: for of : " + i);
 }
 
 console.log("");
@@ -67,7 +74,7 @@ for (let i in text) {
 console.log("");
 
 // reverse a given string
-for (let i = text.length-1; i >= 0; i--) {
+for (let i = text.length - 1; i >= 0; i--) {
   console.log("Loop: Reverse a String : " + text[i]);
 }
 
@@ -108,14 +115,12 @@ for (let i of numbers) {
 }
 console.log("Sum: Loop: " + sum3);
 
-
-
 let sum4 = 0;
 for (let number of numbers) {
   sum4 = sum4 + number;
 }
 console.log("Sum: Loop: " + sum4);
-console.log("")
+console.log("");
 // Largest number in array
 
 const arr = [1, 2, 3];
@@ -127,13 +132,13 @@ const largest2 = Math.max.apply(null, arrayOfNumbers);
 
 //console.log(max);
 console.log("Math.max(...array) : " + largest);
-//console.log(arrayOfNumbers); 
-console.log("")
+//console.log(arrayOfNumbers);
+console.log("");
 
 // Function to add numbers in an Array
-function sumOfArray(array){
+function sumOfArray(array) {
   let sum = 0;
-  for(let number of array){
+  for (let number of array) {
     sum += number;
   }
   return sum;
@@ -141,7 +146,7 @@ function sumOfArray(array){
 console.log("Function: sumOfArray : " + sumOfArray(numbers));
 
 // Function to find the largest number of an Array
-function maxInArray(array){
+function maxInArray(array) {
   const max = Math.max(...array);
   return max;
 }
@@ -149,31 +154,30 @@ console.log("Function: maxInArray : " + maxInArray(numbers));
 
 // Function get Even numbers
 
-function getEvenNumbers(array){
-    let evenNumbers = array.filter((number) => number% 2 == 0);
-    return evenNumbers;
+function getEvenNumbers(array) {
+  let evenNumbers = array.filter((number) => number % 2 == 0);
+  return evenNumbers;
 }
 console.log("Function: getEvenNumbers : " + getEvenNumbers(numbers));
 
 // numbers.forEach((number) => console.log(number));
 
-function getOddNumbers(array){
-  let oddNumbers = array.filter((number) => number% 2 !== 0);
+function getOddNumbers(array) {
+  let oddNumbers = array.filter((number) => number % 2 !== 0);
   return oddNumbers;
 }
 console.log("Function: getOddNumbers : " + getOddNumbers(numbers));
 
-
-function squareRootOfArray(array){
+function squareRootOfArray(array) {
   const squared = array.map((num) => Math.sqrt(num));
   return squared;
 }
 
-console.log("")
+console.log("");
 console.log("Function: squareRootOfArray : " + squareRootOfArray(numbers));
 const squared = squareRootOfArray(numbers);
-console.log("")
-console.log("Console.log(squared): ↓ ↓ ↓")
+console.log("");
+console.log("Console.log(squared): ↓ ↓ ↓");
 console.log(squared);
 
 // Object
@@ -185,32 +189,34 @@ let person = {
     city: "Bowling Green",
     state: "Kentucky",
     zip: "42101",
-    county: "Warren"
-  }
+    county: "Warren",
+  },
 };
-console.log("")
-console.log("Console.log(person.address): ↓ ↓ ↓")
+console.log("");
+console.log("Console.log(person.address): ↓ ↓ ↓");
 console.log(person.address);
 
 let job = {
-  jobTitle: 'JavaScript Developer',
-  location: 'USA'
+  jobTitle: "JavaScript Developer",
+  location: "USA",
 };
 // Merge object with spread operator (...)
 // If objects have a property with the same name, then the right-most object property overwrites the previous one.
 let employee = {
   ...person,
-  ...job
+  ...job,
 };
-console.log("")
-console.log("Merged Object: spread operator (...)          ↓ ↓ ↓ ↓ ↓")
+console.log("");
+console.log("Merged Object: spread operator (...)          ↓ ↓ ↓ ↓ ↓");
 console.log(employee);
 
 // Merge object with Object.assign(target, sourceObj1, sourceObj2, ...)
 
 let target = Object.assign(person, job);
-console.log("")
-console.log("Merged Object: Object.assign(sourceObj1, sourceObj2, ...)          ↓ ↓ ↓ ↓ ↓")
+console.log("");
+console.log(
+  "Merged Object: Object.assign(sourceObj1, sourceObj2, ...)          ↓ ↓ ↓ ↓ ↓"
+);
 console.log(target);
 
 // Form
@@ -221,23 +227,23 @@ console.log(target);
 // https://javascript.plainenglish.io/javascript-find-even-numbers-in-array-90943d5480ec
 //
 // READ // https://javascript.plainenglish.io/how-to-get-html-form-values-with-javascript-b4869bc5e889
-// 
-getFormData = (selector) => Object.fromEntries(new FormData(document.querySelector(selector)))
-console.log("")
-console.log("Form: Output of getFormData:          ↓ ↓ ↓ ↓ ↓")
-console.log(getFormData('#form1'));
-
+//
+getFormData = (selector) =>
+  Object.fromEntries(new FormData(document.querySelector(selector)));
+console.log("");
+console.log("Form: Output of getFormData:          ↓ ↓ ↓ ↓ ↓");
+console.log(getFormData("#form1"));
 
 //const firstName = document.getElementById('form1').elements['name'].value;
 // form.querySelector('input[name="fname"]');
 const form = document.querySelector("#form1");
-const fName = form.elements['fname'].value;
-const lName = form.elements['lname'].value;
-console.log("")
-console.log("Form: Output of querySelector(\"#form1\")          ↓ ↓ ↓ ↓ ↓")
+const fName = form.elements["fname"].value;
+const lName = form.elements["lname"].value;
+console.log("");
+console.log('Form: Output of querySelector("#form1")          ↓ ↓ ↓ ↓ ↓');
 console.log(form);
-console.log("")
-console.log("Form: Output of form.elements['name'].value          ↓ ↓ ↓ ↓ ↓")
+console.log("");
+console.log("Form: Output of form.elements['name'].value          ↓ ↓ ↓ ↓ ↓");
 console.log(fName);
 console.log(lName);
 
@@ -245,8 +251,8 @@ var form2 = document.forms[0];
 var selectElement = form2.querySelector('input[name="fname"]');
 var selectedValue = selectElement.value;
 //alert(selectedValue);
-console.log("")
-console.log("Form: Output of form.elements['name'].value          ↓ ↓ ↓ ↓ ↓")
+console.log("");
+console.log("Form: Output of form.elements['name'].value          ↓ ↓ ↓ ↓ ↓");
 console.log(selectedValue);
 
 /// https://stackoverflow.com/a/65231208
@@ -261,19 +267,4 @@ ccForm.onsubmit = function(e) {
   e.preventDefault();
 }
 */
-
-function getFormvalue(){
-  var form = document.forms[0];
-  var fName = form.querySelector('input[name="fname"]');
-  var firstName = fName.value;
-  var lName = form.querySelector('input[name="lname"]');
-  var lastName = lName.value;
-
-  document.getElementsByTagName("p")[4].innerHTML = date.toTimeString();
-  document.getElementsByTagName("p")[5].innerHTML = date.toISOString();
-
-}
-
-
-
 
