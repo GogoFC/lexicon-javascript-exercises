@@ -1,0 +1,1 @@
+document.getElementsByTagName("p")[2].innerHTML = date.toTimeString();
