@@ -4,7 +4,7 @@ const date = new Date();
 document.getElementsByTagName("p")[0].innerHTML =
   date.toLocaleDateString("sv-SE");
 document.getElementsByTagName("p")[1].innerHTML = date.toLocaleDateString();
-document.getElementsByTagName("p")[2].innerHTML = date.toTimeString();
+
 document.getElementsByTagName("p")[3].innerHTML = date.toISOString();
 
 console.log("Date: " + date);
