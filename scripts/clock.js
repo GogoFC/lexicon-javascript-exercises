@@ -8,7 +8,6 @@ function display_ct() {
 }
 
 function clock() {
-  var time = new Date();
   document.getElementsByTagName("p")[3].innerHTML = Date();
 }
 setInterval(clock, 1000);
