@@ -1,5 +1,6 @@
 function set_background(){
-    document.body.style.backgroundColor = "black";
+    document.body.style.backgroundColor = "rgb(23, 20, 33)";
+    document.body.style.color = "#D0CFCC";
     document.getElementById("z1").style.backgroundColor = "rgb(254, 204, 2)";
     document.getElementById("z2").style.backgroundColor = "rgb(0, 106, 167)";
     document.getElementById("z2").style.color = "rgb(254, 204, 2)";
@@ -9,7 +10,7 @@ function set_background(){
 }
 
 function reset_background(){
-    document.body.style.backgroundColor = "rgb(23, 20, 33)";
+    location.reload();
 }
 
 
